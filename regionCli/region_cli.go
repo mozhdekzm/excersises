@@ -1,4 +1,4 @@
-package regionCli
+package region_cli
 
 import (
 	"bufio"
@@ -27,8 +27,8 @@ func RegionCmd() {
 	// ./cli --command=create --region=tehran --> enter name,address,phone,created_at,empCount
 	// ./cli --command=edit --region=tehran --> enter branch id
 	// ./cli --command=status --region=tehran --> count of branches in region and count of employeas
-	command := flag.String("command", "default", "desc")
-	region := flag.String("region", "def", "desc")
+	command := flag.String("command", "list", "its can be:list,get,create,edit,status")
+	region := flag.String("region", "tehran", " your region ")
 	flag.Parse()
 
 	for {

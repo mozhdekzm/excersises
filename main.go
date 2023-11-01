@@ -7,6 +7,6 @@ import (
 
 func main() {
 	fmt.Println("hi")
-	regionCli.RegionCmd()
+	region_cli.RegionCmd()
 
 }
